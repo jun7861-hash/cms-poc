@@ -1,0 +1,32 @@
+
+._step {
+	ul {
+		list-style-type: none;
+		display: flex;
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		overflow: hidden;
+	
+		li {
+			display: flex;
+			padding-right: 10px;
+			align-items: center;
+	
+			&::after {
+				content: '\203A';
+				font-size: 50px;
+				padding-left: 5px;
+				margin-top: -15px;
+			}
+			span {
+				align-items: center;
+			}
+			&:last-child {
+				&::after {
+					content: '';
+				}
+			}
+		}
+	}
+}

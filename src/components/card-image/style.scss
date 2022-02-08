@@ -1,0 +1,51 @@
+._image-widget {
+	.image-col.col-sm-5th {
+    position: relative;
+    padding-right: .5rem;
+    height: 200px;
+    flex: 0 0 auto; 
+    width: 20%;
+    
+
+
+    &:nth-child(5n) {
+      padding-right: 0;
+    }
+
+    .toggle {
+      margin-right: .5rem;
+      color: #666;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+      z-index: 30;
+    }
+
+    img {
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    img.selected {
+      border: solid 2px #39f !important;
+      opacity: .5;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  ._image-widget {
+    .image-col.col-sm-5th {
+      padding-right: 0;
+      width: 100%;
+      height: 100%;
+
+      .toggle {
+        margin-right: 0;
+      }
+    }
+  }
+}

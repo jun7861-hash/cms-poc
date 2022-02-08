@@ -1,0 +1,11 @@
+.modal._notif-modal {
+  z-index: 1501 !important;
+}
+
+@media (min-width: 576px) {
+  .modal_actions {
+    .modal-dialog {
+      max-width: 600px!important;
+    }
+  }
+}

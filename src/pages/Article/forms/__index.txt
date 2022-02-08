@@ -1,0 +1,710 @@
+{/* <CRow className='mb-3'>
+  <CCol lg='6'>
+      <h4>Keyword</h4>
+      <CInput
+          onChange={handleKeywordChange}
+          type="text"
+          value={keywordText}
+      />
+  </CCol>
+  <CCol lg='6'>
+      <h4>Search Volume</h4>
+      <CInput
+          className='w-25'
+          type="number"
+          disabled={keywordText.length === 0 ? true : false}
+      />
+  </CCol>
+  <CCol sm='12'>
+      <CFormText className="help-block">
+          &#9432; &nbsp;
+          These tags describes your page's content. They don't appear on the article page itself but only in the html code. These tags help tell search engines what the page is about.
+      </CFormText>
+  </CCol>
+</CRow> */}
+
+{/* <CRow className='mb-3'>
+  <CCol sm='12'>
+    <h4>Custom Headline</h4>
+    <CTextarea
+      type="text"
+    />
+  </CCol>
+  <CCol sm='12'>
+    <CFormText className="help-block" style={{display: 'flex', justifyContent: 'space-between'}}>
+      <p>
+        &#9432; &nbsp;
+        This will appear on: all widgets, feeds within the site, Facebook, Twitter.
+      </p>
+      <p>
+        0/65
+      </p>
+    </CFormText>
+  </CCol>
+</CRow> */}
+
+{/* <CRow className='mb-3'>
+  <CCol sm='12'>
+    <h4>SEO Title</h4>
+    <CFormGroup>
+      <CInput
+        required
+        type="text"
+      />
+      <CInvalidFeedback className="help-block">
+        This field is required.
+      </CInvalidFeedback>
+    </CFormGroup>
+  </CCol>
+  <CCol sm='12'>
+    <CFormText className="help-block" style={{display: 'flex', justifyContent: 'space-between'}}>
+      <p>
+        &#9432; &nbsp;
+        The ideal length of an article meta title is between 55-65 characters. Meta titles are shown in results page of search engines like Google; but are truncated if it is too long.
+      </p>
+      <p>
+        0/65
+      </p>
+    </CFormText>
+  </CCol>
+</CRow> */}
+
+{/* <CRow className='mb-3'>
+  <CCol sm='12'>
+    <h4>SEO Meta Description</h4>
+    <CTextarea
+      required
+      type="text"
+    />
+    <CInvalidFeedback className="help-block">
+      This field is required.
+    </CInvalidFeedback>
+  </CCol>
+  <CCol sm='12'>
+    <CFormText className="help-block" style={{display: 'flex', justifyContent: 'space-between'}}>
+      <p>
+        &#9432; &nbsp;
+        Provide a short summary of what visitors should expect to read in your article. This is displayed on search engine results pages
+      </p>
+      <p>
+        0/300
+      </p>
+    </CFormText>
+  </CCol>
+</CRow> */}
+
+{/* <CRow className='mb-3'>
+  <CCol sm='12'>
+    <h4>Meta Canonical URL</h4>
+    <CTextarea
+      type="text"
+    />
+  </CCol>
+  <CCol sm='12'>
+    <CFormText className="help-block" style={{display: 'flex', justifyContent: 'space-between'}}>
+      <p>
+        &#9432; &nbsp;
+        WARNING: Only touch this field IF this page is accessible via multiple links. Enter the latest/correct URL of the page here.
+      </p>
+      <p>
+        0/160
+      </p>
+    </CFormText>
+  </CCol>
+</CRow> */}
+
+{/* <CRow className='mb-3'>
+  <CCol sm='12'>
+    <h4>Article Summary</h4>
+    <Editor
+      value={articleSummaryText}
+      init={{
+        height: 500,
+        menubar: false,
+        plugins: [
+          'advlist autolink lists link image charmap print preview anchor',
+          'searchreplace visualblocks code fullscreen',
+          'insertdatetime media table paste code help wordcount'
+        ],
+toolbar:
+// eslint-disable-next-line
+          'undo redo | formatselect | bold italic backcolor | \
+          alignleft aligncenter alignright alignjustify | \
+          bullist numlist outdent indent | removeformat | help'
+      }}
+      onEditorChange={handleArticleSummaryChange}
+    />
+
+  </CCol>
+  <CCol sm='12'>
+    <CFormText className="help-block">
+      &#9432; &nbsp;
+      You may add an article summary to this article.
+    </CFormText>
+  </CCol>
+</CRow> */}
+
+{/* <CRow className='mb-3'>
+  <CCol sm='12'>
+    <h4>Visible Tags</h4>
+    <CInput
+      placeholder='Add a visible tag to this article...'
+      type="text"
+    />
+  </CCol>
+  <CCol sm='12'>
+    <CFormText className="help-block">
+      &#9432; &nbsp;
+      Use tags to specify a topic, person, brand, institution, or an event included in your article. Avoid duplicating or restating words as it doesn't help in organizing content.
+    </CFormText>
+  </CCol>
+</CRow>
+
+<CRow className='mb-3'>
+  <CCol sm='12'>
+    <h4>Invisible Tags</h4>
+    <CInput
+      placeholder='Add a invisible tag to this article...'
+      type="text"
+    />
+  </CCol>
+  <CCol sm='12'>
+    <CFormText className="help-block">
+      &#9432; &nbsp;
+      Use invisible tags for tags that should not be visible to your audience.
+    </CFormText>
+  </CCol>
+</CRow> */}
+
+{/* <CRow className='mb-3'>
+  <CCol sm='12'>
+    <h4>SEO Topic</h4>
+    <CInput
+      placeholder='Add closest Wikipedia topic URL'
+      type="text"
+    />
+  </CCol>
+  <CCol sm='12'>
+    <CFormText className="help-block">
+      &#9432; &nbsp;
+      This field refers to the primary Wikipedia topic associated with this article. Some examples: for an article about "the main antagonist in Star Wars",<br />
+      the SEO topic is: "Darth Vader" from https://en.wikipedia.org/wiki/Darth_Vader; for an article about "pregnancy", the SEO topic is: "Pregnancy"<br />
+      from https://en.wikipedia.org/wiki/Pregnancy; for an article about "difficulties /complications during pregnancy", the SEO topic is: "Complications of Pregnancy"<br/>
+      from https://en.wikipedia.org/wiki/Complications_of_pregnancy.
+    </CFormText>
+  </CCol>
+</CRow> */}
+
+{/* <CRow className='mb-3'>
+  <CCol sm='12'>
+    <h4>Image Caption</h4>
+    <CTextarea
+      placeholder='Enter Imag Caption'
+      type="text"
+    />
+  </CCol>
+  <CCol sm='12'>
+    <CFormText className="help-block">
+      &#9432; &nbsp;
+      This field refers to the primary Wikipedia topic associated with this article. Some examples: for an article about "the main antagonist in Star Wars",<br />
+      the SEO topic is: "Darth Vader" from https://en.wikipedia.org/wiki/Darth_Vader; for an article about "pregnancy", the SEO topic is: "Pregnancy"<br />
+      from https://en.wikipedia.org/wiki/Pregnancy; for an article about "difficulties /complications during pregnancy", the SEO topic is: "Complications of Pregnancy"<br/>
+      from https://en.wikipedia.org/wiki/Complications_of_pregnancy.
+    </CFormText>
+  </CCol>
+</CRow> */}
+
+{/* <CRow className='mb-3'>
+  <CCol sm='12'>
+    <h4>Custom Byline</h4>
+      <CRow className='mb-2'>
+        <CCol lg='6'>
+          <CInput
+            placeholder='Enter custom byline'
+            type="text"
+          />
+          <CFormText className="help-block">
+            &#9432; &nbsp;
+            You can add multiple authors by selecting their names from the field above.
+          </CFormText>
+        </CCol>
+        <CCol lg='6'>
+          <CInput
+            placeholder='Search by Author Name'
+            type="text"
+          />
+          <CFormText className="help-block">
+            &#9432; &nbsp;
+            Please assign a name for this custom byline.
+          </CFormText>
+        </CCol>
+      </CRow>
+    {bylineContent.map((content, i) => ( 
+      <CRow className='mb-2' key={i}>
+        <CCol lg='6'>
+          <CInput
+            placeholder='Enter custom byline'
+            type="text"
+            id={`customByline${bylineContent.length}`}
+            name={`customByline${bylineContent.length}`}
+          /><span style={{display: 'none'}}>{content}</span>
+          <CFormText className="help-block">
+            &#9432; &nbsp;
+            You can add multiple authors by selecting their names from the field above.
+          </CFormText>
+        </CCol>
+        <CCol lg='6'>
+          <CInput
+            placeholder='Search by Author Name'
+            type="text"
+          />
+          <CFormText className="help-block">
+            &#9432; &nbsp;
+            Please assign a name for this custom byline.
+          </CFormText>
+        </CCol>
+      </CRow>
+    ))}
+  </CCol>
+</CRow>
+
+<CRow className='mb-3'>
+  <CCol>
+    <CButton onClick={addBylineContent} className='d-block mb-2' color="success" variant='ghost'>
+      <i className="material-icons" style={{fontSize: '0.875rem'}}>add</i>
+      Add Another Custom Byline
+    </CButton>
+  </CCol>
+</CRow> */}
+
+{/* <CRow className='mb-3'>
+  <CCol lg='6'>
+    <h4>Editor</h4>
+    <CInput
+      placeholder='Search By Author Name'
+      type="text"
+    />
+    <CFormText className="help-block">
+      &#9432; &nbsp;
+      Please assign an editor to this article.
+    </CFormText>
+  </CCol>
+  <CCol lg='6'>
+    <h4>Total Content Cost</h4>
+    <CInputGroup>
+      <CInputGroupPrepend>
+        <CInputGroupText className={'bg-secondary'} style={{color: '#555'}}>
+          ₱
+        </CInputGroupText>
+      </CInputGroupPrepend>
+      <CInput 
+        type="text"
+        disabled 
+        value='0.00'
+        style={{textAlign: 'right'}} 
+      />
+    </CInputGroup>
+    <CFormText className="help-block">
+      &#9432; &nbsp;
+      You can add multiple authors by selecting their names from the field above.
+    </CFormText>
+  </CCol>
+</CRow> */}
+
+<hr />
+
+{/* <CRow className='mb-3'>
+  <CCol sm='12'>
+    <h4>Other Contents</h4>
+    <CRow>
+      <CCol lg='6' className='mb-2'>
+        <div className='d-flex p-2 w-100' style={{justifyContent: 'space-between', backgroundColor: '#e1e1e1', borderRadius: '5px'}}>
+          <span className='d-flex my-auto'>Hide Comments?</span>
+          <CSwitch
+            size='sm'
+            color='success'
+          />
+        </div>
+        <CFormText className="help-block">
+          &#9432; &nbsp;
+          Please specify if you would want to turn off commenting for this article.
+        </CFormText>
+      </CCol>
+      <CCol lg='6' className='mb-2'>
+        <div className='d-flex p-2 w-100' style={{justifyContent: 'space-between', backgroundColor: '#e1e1e1', borderRadius: '5px'}}>
+          <span className='d-flex my-auto'>Enable Content To Audio?</span>
+          <CSwitch
+            size='sm'
+            color='success'
+          />
+        </div>
+        <CFormText className="help-block">
+          &#9432; &nbsp;
+          Please specify if you would want to enable Content to Audio.
+        </CFormText>
+      </CCol>
+      <CCol lg='6' className='mb-2'>
+        <div className='d-flex p-2 w-100 mb-3' style={{justifyContent: 'space-between', backgroundColor: '#e1e1e1', borderRadius: '5px'}}>
+          <span className='d-flex my-auto'>Is This NSFW?</span>
+          <CSwitch
+            size='sm'
+            color='success'
+          />
+        </div>
+        <div className='d-flex p-2 w-100' style={{justifyContent: 'space-between', backgroundColor: '#e1e1e1', borderRadius: '5px'}}>
+          <span className='d-flex my-auto'>Enable For Syndication?</span>
+          <CSwitch
+            size='sm'
+            color='success'
+          />
+        </div>
+        <CFormText className="help-block">
+          &#9432; &nbsp;
+          Please specify if you want this article to be seen in the syndication tool by other Summit sites, regardless of the author.
+        </CFormText>
+      </CCol>
+    </CRow>
+  </CCol>
+</CRow> */}
+
+{/* 
+<CRow className='mb-3'>
+  <CCol sm='12'>
+    <h4>Article Image</h4>
+    <CRow>
+      <CCol lg='6'>
+        <CButton onClick={toggleModalAddMainImage} className='d-block mb-2' style={{width: '100%'}} color="success">
+          <i className="material-icons" style={{fontSize: '0.875rem'}}>add</i>
+          Add Main Image
+        </CButton>
+      </CCol>
+      <CCol lg='2'>
+        <div className='d-flex p-2' style={{justifyContent: 'space-between', backgroundColor: '#e1e1e1', borderRadius: '5px'}}>
+          <span className='d-flex my-auto'>Display?</span>
+          <CSwitch
+            size='sm'
+            color='success'
+            labelOn='YES'
+            labelOff='NO'
+            checked={dataArticle.display_author}
+            onChange={(e) => handleChangeArticle('display_author', e.target.value)}
+          />
+        </div>
+      </CCol>
+      <CCol lg='4'>
+        <CButton className='d-block mb-2' style={{width: '100%'}} color="success" variant='ghost'>
+          <i className="material-icons" style={{fontSize: '0.875rem'}}>add</i>
+          Add Alternative Thumbnail
+        </CButton>
+      </CCol>
+    </CRow>
+  </CCol>
+  <CCol sm='12'>
+    <CFormText className="help-block">
+      &#9432; &nbsp;
+      A main image (1200px x 675px) serves as a visual representation of your article. It appears on social media when your article is shared.<br />
+      An alternate image (225px x 128px) can be used to show a different photo on the website widgets.
+    </CFormText>
+  </CCol>
+</CRow>
+ */}
+
+ 
+{/* 
+<CRow className='mb-3'>
+  <CCol sm='12'>
+    <h4>Alternate Header</h4>
+    <CRow>
+      <CCol lg='6'>
+        <CButton onClick={toggleModalAddMainVideo} className='d-block mb-2' style={{width: '100%'}} color="success">
+          <i className="material-icons" style={{fontSize: '0.875rem'}}>add</i>
+          Add Main Video
+        </CButton>
+        <CFormText className="help-block">
+          &#9432; &nbsp;
+          The video will appear on the article page instead of the main image.
+        </CFormText>
+      </CCol>
+      <CCol lg='6'>
+        <CButton onClick={toggleModalAddMainGallery} className='d-block mb-2' style={{width: '100%'}} color="success">
+          <i className="material-icons" style={{fontSize: '0.875rem'}}>add</i>
+          Add Main Gallery
+        </CButton>
+        <CFormText className="help-block">
+          &#9432; &nbsp;
+          The gallery will appear on the article page instead of the main image.
+        </CFormText>
+      </CCol>
+    </CRow>
+  </CCol>
+</CRow>
+
+<hr />
+*/}	
+
+
+
+
+
+// MODALS AND IMAGE
+
+
+/* const toggleModalAddMainImage = ()=>{
+  setModalAddMainImage(!modalAddMainImage);
+}
+
+const toggleModalAddMainVideo = ()=>{
+  setModalAddMainVideo(!modalAddMainVideo);
+}
+
+const toggleModalAddMainGallery = ()=>{
+  setModalAddMainGallery(!modalAddMainGallery);
+}
+ */
+
+ 
+/* const [modalAddMainImage, setModalAddMainImage] = useState(false);
+const [modalAddMainVideo, setModalAddMainVideo] = useState(false);
+const [modalAddMainGallery, setModalAddMainGallery] = useState(false);
+const [dataImage, setDataImage] = useState([]);
+ */
+
+
+ 
+{/* 
+  ADD MAIN IMAGE MODAL
+*/}
+// <ImageLibraryModal 
+//   view={view}
+//   columns={columns}
+//   data={filterData(imageList)}
+//   selectImage
+//   show={modalAddMainImage}
+// 	onClose={toggleModalAddMainImage}
+// >
+//   <CInputGroup className='mb-3'>
+//     <CInput 
+//       placeholder="Search Item by Tags or Filename" 
+//       value={searchText} 
+//       onChange={(e) => setSearchText(e.target.value)}
+//     />
+//     <CInputGroupAppend>
+//       <CInputGroupText className='bg-info text-white'>
+//         <i className="material-icons" style={{cursor: 'default'}}>search</i>
+//       </CInputGroupText>
+//     </CInputGroupAppend>
+//   </CInputGroup>
+//   <div className='d-flex justify-content-end mb-2'>
+//       <CPopover content="View by large thumbnails">
+//         <i 
+//           onClick={() => setView(true)}
+//           style=
+//             {{
+//               borderRadius: '.25rem',
+//               cursor: !view ? 'pointer' : 'default',
+//             }}
+//           className={`material-icons ml-2 p-2 ${view ? 'bg-info text-white' : ''}`}
+//         >
+//           perm_media
+//         </i>
+//       </CPopover>
+//       <CPopover content="View by table">
+//         <i 
+//           onClick={() => setView(false)}
+//           style=
+//             {{
+//               borderRadius: '.25rem',
+//               cursor: view ? 'pointer' : 'default',
+//             }}
+//           className={`material-icons ml-2 p-2 ${!view ? 'bg-info text-white' : ''}`}
+//         >
+//           table_view
+//         </i>
+//       </CPopover>
+//   </div>
+// </ImageLibraryModal>
+
+{/* 
+  ADD MAIN VIDEO MODAL
+*/}
+// <RightModal
+// 	isExtended='video'
+//   size='lg'
+//   show={modalAddMainVideo}
+//   onClose={toggleModalAddMainVideo}
+//   hasSaveButton
+//   titleSaveButton='Add To Content'
+//   closeButton
+// > 
+// 	<CCardBody>
+// 		<CTabs>
+// 			<CNav variant="tabs">
+// 				<CNavItem>
+// 					<CNavLink>
+// 						Video Library
+// 					</CNavLink>
+// 				</CNavItem>
+// 				<CNavItem>
+// 					<CNavLink>
+// 						Upload Video
+// 					</CNavLink>
+// 				</CNavItem>
+// 			</CNav>
+// 			<CTabContent
+// 				className='p-2'
+// 				style={{
+// 					maxHeight: '500px',
+// 					border: '1px solid',
+// 					borderColor: '#c4c9d0',
+// 					borderTop: '0',
+// 					borderBottomLeftRadius: '5px',
+// 					borderBottomRightRadius: '5px',
+// 					overflowY: 'auto'
+// 				}}
+// 			>
+// 				<CTabPane>
+// 					<CRow className='m-0'>
+// 						{dataImage.map((image) => (
+// 							<CCol className='mb-2 pr-1 pl-1' sm='3' key={image.id}>
+//                 <CWidgetIcon className='_widget' text={image.title} iconPadding={false}>
+// 								  <CImg className='w-100' src={image.url} alt={image.title} name={image.title} />
+//                 </CWidgetIcon>
+// 							</CCol>
+// 						))}
+// 					</CRow>
+// 				</CTabPane>
+// 				<CTabPane>
+//           <FileUploader
+//             // getUploadParams={getUploadParams}
+//             onChangeStatus={handleChangeStatus}
+//             onSubmit={handleSubmit}
+//             accept="video/*"
+//             maxSizeBytes={500000}
+//           />
+// 				</CTabPane>
+// 			</CTabContent>
+// 		</CTabs>
+// 	</CCardBody>
+// </RightModal>
+
+
+
+{/* 
+  ADD MAIN GALLERY MODAL
+*/}
+// <RightModal
+//   size='lg'
+//   show={modalAddMainGallery}
+//   onClose={toggleModalAddMainGallery}
+//   hasSaveButton
+//   titleSaveButton='Add To Content'
+// 	closeButton
+// 	hasFooter={false}
+// >
+  
+//   <h4 className='mb-3'>Image Gallery</h4>
+//   <CDataTable
+//     tableFilter
+//     itemsPerPageSelect
+//     itemsPerPage={5}
+//     hover
+//     sorter
+//     pagination
+//     scopedSlots = {
+//       {'action':
+//         (item)=>(
+//           <td>
+//             <CFormGroup variant="checkbox">
+//               <CInputRadio className="form-check-input" name='galleryRadio' value={item.id} selected={item.action} />
+//             </CFormGroup>
+//           </td>
+//         ),
+//       }
+//     }
+//   />
+// </RightModal>
+
+
+
+ 
+  // // specify upload params and url for your files
+  // // const getUploadParams = ({ meta }) => { return { url: 'https://httpbin.org/post' } }
+  
+  // // called every time a file's `status` changes
+  // const handleChangeStatus = ({ meta, file }, status) => { console.log(status, meta, file) }
+  
+  // // receives array of files that are done uploading when submit button is clicked
+  // const handleSubmit = (files, allFiles) => {
+  //   // console.log(files.map(f => f.meta))
+  //   allFiles.forEach(f => f.remove())
+	// }
+
+
+  // const loadData = async () => {
+  //   setIsHandling(true)
+  //   await getAllImage();
+  //   setIsHandling(false)
+  // }
+
+  // useEffect(() => {
+	// 	loadData()
+  // }, [])
+  
+  
+
+  // const columns = [
+  //   { accessor: 'path', Header: 'Link' },
+  //   { accessor: 'photographer', Header: 'Photographer' },
+  //   { accessor: 'illustrator', Header: 'Illustrator'},
+  //   { accessor: 'contributor_fee', Header: 'Contributor Fee'},
+  //   { accessor: 'tags', Header: 'Tags'},
+  //   { accessor: 'alt_text', Header: 'Alt Text'}
+  // ]
+
+  
+
+// const filterData = (data) => {
+//   let results = data.filter(
+//     image =>
+//       (
+//         (
+//           searchText === '' || 
+//           (image.tags && image.tags.toLowerCase().indexOf(searchText.toLowerCase()) >= 0) ||
+//           (image.filename && image.filename.toLowerCase().indexOf(searchText.toLowerCase()) >= 0)
+//         )
+//       )
+//   );
+//   return results;
+// }
+
+// const [isHandling, setIsHandling] = useState(false);
+// const [isDataHandling, setIsDataHandling] = useState(false);
+// const [addArticleModal, setAddArticleModal] = useState({
+//   open: false,
+//   data: {}
+// });
+
+// /* IMAGE STATE */
+// const imageList = useSelector(state => state.master.imageList);
+// const [view, setView] = useState(true);
+// const [searchText, setSearchText] = useState('');
+// /* xxxIMAGE STATE */
+
+// var setObj = new Set(); // create key value pair from array of array
+
+// const sectionOptions = articleList.map(article => (
+//   {
+//     value: article.section_id,
+//     label: article.section_name
+//   }
+// ))
+// const removeDuplicate = (article) => {
+//   const result = article && article.reduce((acc, item)=>{
+//     if(!setObj.has(item.value)){
+//       setObj.add(item.value, item)
+//       acc.push(item)
+//     }
+//     return acc;
+//   },[]);
+//   return result;
+// }

@@ -1,0 +1,54 @@
+.modal._profile-modal {
+  .modal-lg {
+    max-width: 1000px;
+    
+    p.material-icons {
+      font-size: 30px !important;
+      opacity: .5;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .field-password {
+      width: 50%;
+    }
+
+    .area-permission {
+      .active-permission {
+        background-color: #e1e1e1;
+
+        .item {
+          padding: 15px;
+          border-right: 1px solid #d2d2d2;
+          &:last-child {
+            border-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.edit-profile-container {
+  
+  .modal-backdrop {
+    z-index: 1305 !important;
+  }
+
+  .edit-profile-modal {
+    z-index: 1307 !important;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .modal._profile-modal {
+    .modal-lg {
+      .field-password {
+        width: 100%;
+      }
+    }
+  }
+}
+

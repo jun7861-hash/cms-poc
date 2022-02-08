@@ -1,0 +1,15 @@
+.preview-mobile,
+.preview-desktop {
+    height: 130vw !important;
+}
+
+.preview-mobile {
+    width: 50% !important;
+}
+
+
+@media (max-width: 767px) {
+    .preview-mobile {
+        width: 100% !important;
+    }   
+}

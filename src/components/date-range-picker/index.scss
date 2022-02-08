@@ -1,0 +1,35 @@
+._date-range-picker {
+    .calendar-container {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 950px) {
+    ._date-range-picker {
+        .calendar-container {
+            padding-bottom: 0 0 10px;
+        }
+        .rdrDateRangePickerWrapper {
+            display: block;
+        }
+        .rdrDefinedRangesWrapper {
+            width: 100%;
+            border-right: 0;
+        }
+        .rdrMonths {
+            display: block;
+            .rdrMonth {
+                padding: 0;
+                width: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    ._date-range-picker {
+        .calendar-container {
+            padding: 0 0 10px;
+        }
+    }
+}
